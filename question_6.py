@@ -29,13 +29,13 @@ if __name__ == "__main__":
     b = 10
 
     qa = trapezoidal_rule(f, a, b, 2, 1/2)
-    print('a)', abs(qa - 8500/3))
+    print('a)', qa, abs(qa - 8500/3))
 
     wsimpson = [1/6, 2/3, 1/6]
     xsimpson = [a, (a+b)/2, b]
     qb = simpsons_rule(f, a, b, xsimpson, wsimpson)
-    print('b)', abs(qb - 8500/3))
+    print('b)', qb, abs(qb - 8500/3))
 
     xgauss = [1/2*(a+b + (a+b)/(np.sqrt(3))), 1/2*(a+b - (a+b)/(np.sqrt(3)))]
     qc = two_point_gauss(f, a, b, xgauss, 1/2)
-    print('c)', abs(qc - 8500/3))
+    print('c)', qc, abs(qc - 8500/3))
