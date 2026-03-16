@@ -13,7 +13,7 @@ if __name__ == "__main__":
     k = 40
     dt = 0.01
     n  = 2000
-    f = 0.025
+    f = 0 #0.025
     t_vals = [i*dt for i in range(n)]
 
     x_vals = x_iterative(m, k, dt, n, f)
