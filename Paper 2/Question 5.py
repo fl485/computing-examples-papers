@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def f(x):
-    return np.sin(x) + np.cos(100*x)/5
+    return np.sin(x) + np.cos(10*x)/5
 
 interval = np.linspace(0,2*np.pi, 50)
 fval = f(interval)
